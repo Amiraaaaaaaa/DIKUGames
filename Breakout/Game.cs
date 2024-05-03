@@ -1,22 +1,12 @@
-using DIKUArcade;
+﻿using DIKUArcade;
 using DIKUArcade.GUI;
-using System;
-
 
 namespace Breakout {
-    public class Game : DIKUGame {
-        public Game(WindowArgs windowArgs) : base(windowArgs) {
-            // Initialization code here
+    class Program {
+        static void Main(string[] args) {
+            var windowArgs = new WindowArgs() { Title = "Breakout v1.0" };
+            var game = new Game(windowArgs);
+            game.Run();
         }
-
-        public override void Update() {
-            // Game logic updates
-        }
-
-        public override void Render() {
-            // Rendering logic
-        }
-
-
     }
 }
